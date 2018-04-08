@@ -4,7 +4,9 @@
 <div id="container">
     {{ partial "header.html" . }}
     <section id="main" class="outer">
-        ARCHIVE?
+        {{ if .Params.archive }}
+          This is an archived post
+        {{ end }}
         {{ partial "article.html" . }}
         {{ if and (not .Params.nocomment) .Site.Params.disqusShortname }}
             {{ template "_internal/disqus.html" . }}
