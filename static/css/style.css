@@ -1097,3 +1097,10 @@ pre .php .xml {
   font-family: 'PT Serif', 'STZhongsong', '华文中宋', 'Microsoft Yahei', serif;
   text-shadow: 1px 3px 3px rgba(0,0,0,0.5);
 }
+.archive-warning {
+  padding: 9px;
+  background: #FDFDFD;
+  margin-top: 21px;
+  border: 1px dashed #999999;
+  border-radius: 6px;
+}

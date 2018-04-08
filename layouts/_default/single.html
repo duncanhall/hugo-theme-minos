@@ -5,7 +5,9 @@
     {{ partial "header.html" . }}
     <section id="main" class="outer">
         {{ if .Params.archive }}
-          This is an archived post
+          <div class="archive-warning">
+            <h1>This is an archive post and is likely to contain missing media, broken links or opinions on long-since abandoned technologies.</h1>
+          </div>
         {{ end }}
         {{ partial "article.html" . }}
         {{ if and (not .Params.nocomment) .Site.Params.disqusShortname }}
